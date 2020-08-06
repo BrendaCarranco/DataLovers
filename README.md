@@ -8,7 +8,7 @@ Data lovers fue desarrollada en React y node js.
 
 ## Demo
 
-Puedes visualizar la demo aquí (https://data-lovers.netlify.app/)
+Puedes visualizar la demo [aqui](https://data-lovers.netlify.app/)
 La app está diseñada para ser utilizada en dispostitivos móviles, te sugiero visualizarla de ese modo.
 
 
