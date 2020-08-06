@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { withRouter } from 'react-router-dom';
 import data from '../../data/injuries/injuries';
+import lupa from '../../img/buscar.svg';
 import './graph.css';
 
 import SelectYear from './Select';
 import TableInfo from './graphOptions/Table';
-import Lineal from './graphOptions/Lineal';
 import Map from './graphOptions/Map';
 
 const Graph = ({ pic, history, medio }) => {
@@ -16,8 +16,8 @@ const Graph = ({ pic, history, medio }) => {
     const [to, setTo] = useState('');
     const [dataArray, setDataArray] = useState([]);
     const [table, setTable] = useState(false);
-    const [chart, setChart] = useState(false);
     const [map, setMap] = useState(false);
+    const [select, setSelect] = useState(true);
 
     const handleEmptyPic = () => {
         if (pic === '') {
@@ -38,31 +38,25 @@ const Graph = ({ pic, history, medio }) => {
             };
             if (from <= dataObj.year && dataObj.year <= to) {
                 array.push(dataObj);
-                //console.log(array); //aquí está uwu
+                //console.log(array); //this
                 setDataArray(array);
             }
             return dataArray;
         });
     };
 
-    console.log(dataArray, 'afuera'); //aquí estaaaaa en state
+    //console.log(dataArray, 'afuera'); final array
 
     const handleTable = () => {
         setTable(true);
-        setChart(false);
         setMap(false);
+        setSelect(false);
         mapData();
-    };
-
-    const test = () => {
-        setTable(false);
-        setChart(true);
-        setMap(false);
     };
 
     const handleMap = () => {
         setTable(false);
-        setChart(false);
+        setSelect(false);
         setMap(true);
     };
 
@@ -81,21 +75,22 @@ const Graph = ({ pic, history, medio }) => {
                     <div className='select-1'>
                         <SelectYear className='select-box' id='to' setTo={setTo} /></div>
                 </div>
-                <button label='grafica' className='btn-1 select-graph' onClick={test} >grafica</button>
                 <button label='tabla' className='btn-1 select-graph' onClick={handleTable} >tabla</button>
-                <button label='mapa' className='btn-1 select-graph' onClick={handleMap} >mapa</button>
+                <button label='mapa' className='btn-1 select-graph right' onClick={handleMap} >mapa</button>
             </div>
 
             {
                 table ? (<TableInfo dataArray={dataArray} />) : (null)
             }
             {
-                chart ? (<Lineal dataArray={dataArray} />) : (null)
-            }
-            {
                 map ? (<Map dataArray={dataArray} />) : (null)
             }
-
+            {
+                select ? (<div className='center'>
+                    <p className='instruction'>Selecciona un intervalo para visualizar la data</p>
+                    <img src={lupa} width='40' height='40' alt='lupa' />
+                </div>) : (<div>false</div>)
+            }
 
         </div>
     );

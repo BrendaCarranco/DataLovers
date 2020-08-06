@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
 import './select.css';
 import { Select } from 'react-materialize';
-import data from '../../data/injuries/injuries';
 
 const SelectYear = ({ id, setFrom, setTo }) => {
 

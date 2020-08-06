@@ -8,7 +8,6 @@ import './index.css';
 const Index = (props) => {
 
     const handleClick = () => {
-        console.log('click');
         props.history.push('/login');
     };
 

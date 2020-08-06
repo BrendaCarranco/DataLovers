@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './dashboard.css';
 import train from '../../img/tractor.svg';
 import bus from '../../img/furgoneta.svg';
@@ -12,7 +12,6 @@ import { withRouter } from 'react-router-dom';
 
 const Dashboard = ({ medio, setMedio, history, setPic }) => {
 
-
     const handleClick = e => {
         setMedio(e.target.id);
         if (medio !== null) {
@@ -24,6 +23,9 @@ const Dashboard = ({ medio, setMedio, history, setPic }) => {
         }
     };
 
+    const handleFooter = () => {
+        history.push('/');
+    };
 
     return (
         <div className='container'>
@@ -49,7 +51,7 @@ const Dashboard = ({ medio, setMedio, history, setPic }) => {
                 </div>
                 <footer>
                     <div className='center'>
-                        <img src={logo} className='footer-logo center' alt='logo-footer' />
+                        <img src={logo} className='footer-logo center' alt='logo-footer' onClick={handleFooter} />
                     </div>
                 </footer>
             </div>

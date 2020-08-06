@@ -4,8 +4,6 @@ import Index from './components/index/Index';
 import Login from './components/login/Login';
 import Dashboard from './components/dashboard/Dashboard';
 import Graph from './components/showData/Graph';
-import TableInfo from './components/showData/graphOptions/Table';
-import Map from './components/showData/graphOptions/Map';
 
 function App() {
 
@@ -17,7 +15,6 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route exact path='/' component={Index} />
-          <Route exact path='/test' component={Map} />
           <Route path='/login' component={Login} />
           <Route path='/dashboard' render={() => <Dashboard medio={medio} setMedio={setMedio} setPic={setPic} />} />
           <Route path='/data' render={() => <Graph pic={pic} medio={medio} />} />
