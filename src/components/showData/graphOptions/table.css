@@ -1,0 +1,16 @@
+.table-1{
+    width: 300px;
+    height: 350px;
+    overflow: scroll;
+    font-family: Montserrat;
+}
+td , th{
+    width: 500px !important;
+}
+.bg{
+    background-color:rgba(79, 100, 111, 0.6) ;
+    text-align: center;
+}
+.align{
+    text-align: center;
+}

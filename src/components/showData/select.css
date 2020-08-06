@@ -1,0 +1,17 @@
+.select-year{
+margin-top: 20px;
+}
+.select-wrapper input.select-dropdown, .ke{
+    width: 101px;
+    height: 35px;
+    background: #EBEBEB;
+    border-radius: 50px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-size: 15px;
+    text-align: center;
+}
+.select-wrapper{
+    width: 90px;
+
+}

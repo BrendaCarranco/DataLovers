@@ -1,0 +1,44 @@
+.logo-login{
+    width: 100px;
+    margin-top: 50px;
+}
+.title{
+    font-family: Montserrat;
+    font-weight: bold;
+    letter-spacing: 7px;
+    margin-top: 1px;
+
+}
+.box{
+    margin-top: 10px !important;
+    background: rgba(2, 1, 1, 0.239) !important;
+    border-radius: 50px !important;
+    box-shadow: 4px 3px 5px 0px #429FCE;
+    font-style: oblique;
+}
+.boxes{
+    margin-top: 8%;
+    margin-left: 13%;
+}
+.btn-login{
+    border-radius: 50px;
+    color: black;
+    font-weight: bold;
+    font-family: Montserrat;
+    background-color: #F46275;
+    margin-left: 13%;
+    height: 42px;
+    margin-top: 10%;
+    margin-left: 0;
+}
+.login{
+    width: 293px;
+}
+.register{
+    margin-top: 50px;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* F46275 */

@@ -1,0 +1,40 @@
+.logo-index{
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+}
+.about-us{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+}
+.welcome{
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 17px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-top: 7px;
+}
+.bold{
+    font-weight: bold;
+    font-family: Montserrat;
+
+}
+.icon{
+    width: 70px;
+}
+.icon-info{
+    height: 135px;
+}
+.info{
+    font-family: Montserrat;
+    font-size: 14px;
+    text-align: center;
+}
+.who{
+    text-align: center;
+}

@@ -1,0 +1,46 @@
+.select-year{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px !important;
+}
+.int{
+    font-family: Montserrat;
+    font-style: normal;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 20px;
+}
+.select-1{
+    margin: 0px 10px 0px 0px;
+    height: 55px;
+}
+.header-icon{
+    width: 65px;
+    margin-top: 15px;
+    margin-bottom: 3px;
+}
+.arrow{
+    margin-top: 25px;
+    margin-left: 10px;
+    color: #4F646F ;
+}
+.rw{
+    margin-bottom: 0px;
+}
+.select-graph{
+    background: #FFFFFF;
+    border: 3px solid #F46275;
+    border-radius: 50px;
+    width: 30%;
+    height: 35px;
+    font-family: Montserrat;
+    margin: 10px 5px 10px 5px; 
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+}
+.select-graph:hover {
+    background-color: rgba(244, 98, 118, 0.479);
+    color: black
+  }
+  

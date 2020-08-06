@@ -1,0 +1,17 @@
+.select-graph{
+    background: #FFFFFF;
+    border: 3px solid #F46275;
+    border-radius: 50px;
+    width: 30%;
+    height: 35px;
+    font-family: Montserrat;
+    margin: 10px 5px 10px 5px; 
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+}
+.select-graph:hover {
+    background-color: rgba(244, 98, 118, 0.479);
+    color: black
+  }
+  

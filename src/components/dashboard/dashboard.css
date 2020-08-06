@@ -1,0 +1,36 @@
+.header{
+    font-size: 18px;
+    font-family: Montserrat;
+    font-weight: bold;
+    letter-spacing: 3px;
+    line-height: 40px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.db-info{
+    font-family: Montserrat;
+    font-size: 15px;
+    line-height: 27px;
+    margin-top: 0px;
+        text-align: center;
+
+}
+.icon-btn{
+    width: 65px !important;
+    margin: 0px 10px 0px 10px;
+}
+.icon-grid{
+   margin-top: 10px;
+}
+.mt-icon{
+    margin-top: 20px;
+}
+.bold-red{
+    color:  #F46275;
+    font-weight: bold;
+}
+.footer-logo{
+    width: 40px;
+    margin-top: 45px;
+}
