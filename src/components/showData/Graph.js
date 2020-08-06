@@ -89,7 +89,7 @@ const Graph = ({ pic, history, medio }) => {
                 select ? (<div className='center'>
                     <p className='instruction'>Selecciona un intervalo para visualizar la data</p>
                     <img src={lupa} width='40' height='40' alt='lupa' />
-                </div>) : (<div>false</div>)
+                </div>) : (null)
             }
 
         </div>
